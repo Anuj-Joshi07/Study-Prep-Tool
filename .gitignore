@@ -1,0 +1,93 @@
+# ============================================================
+#  Study Prep Tool — .gitignore
+# ============================================================
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# ── Virtual environments ─────────────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+StudyBuddy-AI/backend/venv/
+gen ai/env/
+
+# ── Environment / secrets ────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Database ─────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+StudyBuddy-AI/backend/studybuddy.db
+
+# ── Vector store (auto-generated, can be large) ─────────────
+StudyBuddy-AI/backend/chroma_db/
+
+# ── Uploaded files (user data, not code) ────────────────────
+StudyBuddy-AI/backend/storage/
+
+# ── Node / npm ───────────────────────────────────────────────
+node_modules/
+StudyBuddy-AI/frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# ── Vite build output ────────────────────────────────────────
+StudyBuddy-AI/frontend/dist/
+StudyBuddy-AI/frontend/.vite/
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+*.log.*
+logs/
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Python cache / type checking ─────────────────────────────
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Misc temp files ──────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+pip_install.log
+install_log.txt
+groq_test*.log
+chroma_*.log
+faiss_*.log
+scipy_*.log
+qdrant_*.log
+models.log
+test_err.txt
